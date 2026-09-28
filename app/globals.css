@@ -15,7 +15,7 @@
   --radius-lg: 1rem;
 }
 
-:root { color-scheme: dark; --background: oklch(0.08 0.01 285); --foreground: oklch(0.97 0.01 285); --card: oklch(0.12 0.01 285); --card-foreground: oklch(0.97 0.01 285); --border: oklch(1 0 0 / 12%); --input: oklch(1 0 0 / 12%); --ring: oklch(0.7 0.18 50); }
+:root { color-scheme: light; --background: oklch(0.97 0.01 270); --foreground: oklch(0.18 0.02 270); --card: oklch(1 0 0); --card-foreground: oklch(0.18 0.02 270); --border: oklch(0.18 0.02 270 / 10%); --input: oklch(0.18 0.02 270 / 12%); --ring: oklch(0.7 0.18 50); }
 
 @layer base {
   * { @apply border-border outline-ring/50; }
@@ -30,7 +30,7 @@
 .hamburger.is-open i:first-child { transform: translateY(7px) rotate(45deg); }
 .hamburger.is-open i:nth-child(2) { opacity: 0; }
 .hamburger.is-open i:last-child { transform: translateY(-7px) rotate(-45deg); }
-.mobile-menu { position: absolute; left: 0; right: 0; top: calc(100% + 12px); display: flex; flex-direction: column; gap: 18px; border: 1px solid rgb(255 255 255 / 10%); border-radius: 1rem; background: rgb(9 9 11 / 96%); padding: 20px; box-shadow: 0 20px 60px rgb(0 0 0 / 45%); backdrop-filter: blur(24px); animation: menu-in .28s ease both; }
+.mobile-menu { position: absolute; left: 0; right: 0; top: calc(100% + 12px); display: flex; flex-direction: column; gap: 18px; border: 1px solid rgb(255 255 255 / 16%); border-radius: 1rem; background: rgb(18 18 21 / 94%); padding: 20px; box-shadow: 0 20px 60px rgb(0 0 0 / 45%); backdrop-filter: blur(24px); animation: menu-in .28s ease both; }
 .mobile-menu a { color: rgb(228 228 231); font-size: .9rem; font-weight: 600; }
 .mobile-menu a:hover { color: rgb(251 146 60); }
 .shine { position: relative; overflow: hidden; }
