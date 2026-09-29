@@ -7,14 +7,14 @@ import { ArrowLeft, ChevronDown, Filter, Search, ShoppingBag, SlidersHorizontal,
 type Product = { name: string; brand: string; price: string; joule: string; age: string; drive: string; image: string; tag: string; stock: string; category: string }
 
 const products: Product[] = [
-  { name: 'HK416 A5 Sportline', brand: 'Umarex', price: '249,90 €', joule: '1,4 J', age: 'FSK 18', drive: 'S-AEG', category: 'Langwaffen', image: 'https://images.unsplash.com/photo-1595590424283-b8f17842773f?auto=format&fit=crop&w=900&q=90', tag: 'Bestseller', stock: 'Sofort lieferbar' },
-  { name: 'Hi-Capa 5.1 Match', brand: 'Tokyo Marui', price: '189,00 €', joule: '0,9 J', age: 'FSK 18', drive: 'GBB', category: 'Kurzwaffen', image: 'https://images.unsplash.com/photo-1595590424283-b8f17842773f?auto=format&fit=crop&w=900&q=90', tag: 'Neuheit', stock: 'Auf Lager' },
-  { name: 'M4 CQB-R Gen. 2', brand: 'Specna Arms', price: '219,90 €', joule: '0,5 J', age: 'FSK 14', drive: 'S-AEG', category: 'Langwaffen', image: 'https://images.unsplash.com/photo-1588099768523-f4e6a6b48f27?auto=format&fit=crop&w=900&q=90', tag: 'FSK 14', stock: 'Abholung Hanau' },
-  { name: 'VSR-10 Pro Sniper', brand: 'Action Army', price: '159,90 €', joule: '1,8 J', age: 'FSK 18', drive: 'Federdruck', category: 'Langwaffen', image: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=900&q=90', tag: 'Top bewertet', stock: 'Sofort lieferbar' },
-  { name: 'HK416D Custom HPA', brand: 'VFC', price: '679,90 €', joule: '1,6 J', age: 'FSK 18', drive: 'HPA', category: 'Langwaffen', image: 'https://images.unsplash.com/photo-1595590424283-b8f17842773f?auto=format&fit=crop&w=900&q=90', tag: 'Pro Setup', stock: 'Auf Anfrage' },
-  { name: 'AAP-01 Assassin', brand: 'Action Army', price: '129,90 €', joule: '0,9 J', age: 'FSK 18', drive: 'GBB', category: 'Kurzwaffen', image: 'https://images.unsplash.com/photo-1595590424283-b8f17842773f?auto=format&fit=crop&w=900&q=90', tag: 'Bestseller', stock: 'Sofort lieferbar' },
-  { name: 'Daniel Defense MK18', brand: 'Specna Arms', price: '289,90 €', joule: '0,5 J', age: 'FSK 14', drive: 'S-AEG', category: 'Langwaffen', image: 'https://images.unsplash.com/photo-1588099768523-f4e6a6b48f27?auto=format&fit=crop&w=900&q=90', tag: 'FSK 14', stock: 'Abholung Hanau' },
-  { name: 'T10 Bolt Action', brand: 'Novritsch', price: '349,90 €', joule: '2,1 J', age: 'FSK 18', drive: 'Federdruck', category: 'Langwaffen', image: 'https://images.unsplash.com/photo-1595590424283-b8f17842773f?auto=format&fit=crop&w=900&q=90', tag: 'Neuheit', stock: 'Sofort lieferbar' },
+  { name: 'HK416 A5 Sportline', brand: 'Umarex', price: '249,90 €', joule: '1,4 J', age: 'FSK 18', drive: 'S-AEG', category: 'Langwaffen', image: '/products/hk416.png', tag: 'Bestseller', stock: 'Sofort lieferbar' },
+  { name: 'Hi-Capa 5.1 Match', brand: 'Tokyo Marui', price: '189,00 €', joule: '0,9 J', age: 'FSK 18', drive: 'GBB', category: 'Kurzwaffen', image: '/products/hicapa.png', tag: 'Neuheit', stock: 'Auf Lager' },
+  { name: 'M4 CQB-R Gen. 2', brand: 'Specna Arms', price: '219,90 €', joule: '0,5 J', age: 'FSK 14', drive: 'S-AEG', category: 'Langwaffen', image: '/products/mk18.png', tag: 'FSK 14', stock: 'Abholung Hanau' },
+  { name: 'VSR-10 Pro Sniper', brand: 'Action Army', price: '159,90 €', joule: '1,8 J', age: 'FSK 18', drive: 'Federdruck', category: 'Langwaffen', image: '/products/vsr10.png', tag: 'Top bewertet', stock: 'Sofort lieferbar' },
+  { name: 'HK416D Custom HPA', brand: 'VFC', price: '679,90 €', joule: '1,6 J', age: 'FSK 18', drive: 'HPA', category: 'Langwaffen', image: '/products/hk416.png', tag: 'Pro Setup', stock: 'Auf Anfrage' },
+  { name: 'AAP-01 Assassin', brand: 'Action Army', price: '129,90 €', joule: '0,9 J', age: 'FSK 18', drive: 'GBB', category: 'Kurzwaffen', image: '/products/hicapa.png', tag: 'Bestseller', stock: 'Sofort lieferbar' },
+  { name: 'Daniel Defense MK18', brand: 'Specna Arms', price: '289,90 €', joule: '0,5 J', age: 'FSK 14', drive: 'S-AEG', category: 'Langwaffen', image: '/products/mk18.png', tag: 'FSK 14', stock: 'Abholung Hanau' },
+  { name: 'T10 Bolt Action', brand: 'Novritsch', price: '349,90 €', joule: '2,1 J', age: 'FSK 18', drive: 'Federdruck', category: 'Langwaffen', image: '/products/vsr10.png', tag: 'Neuheit', stock: 'Sofort lieferbar' },
 ]
 
 const filterOptions = { Kategorie: ['Langwaffen', 'Kurzwaffen'], Altersfreigabe: ['FSK 14', 'FSK 18'], Antriebsart: ['S-AEG', 'GBB', 'Federdruck', 'HPA'], Marke: ['Umarex', 'Tokyo Marui', 'Specna Arms', 'Action Army', 'VFC', 'Novritsch'] }
