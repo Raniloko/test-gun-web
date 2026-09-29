@@ -33,6 +33,9 @@
 .mobile-menu { position: absolute; left: 0; right: 0; top: calc(100% + 12px); display: flex; flex-direction: column; gap: 18px; border: 1px solid rgb(255 255 255 / 16%); border-radius: 1rem; background: rgb(18 18 21 / 94%); padding: 20px; box-shadow: 0 20px 60px rgb(0 0 0 / 45%); backdrop-filter: blur(24px); animation: menu-in .28s ease both; }
 .mobile-menu a { color: rgb(228 228 231); font-size: .9rem; font-weight: 600; }
 .mobile-menu a:hover { color: rgb(251 146 60); }
+.nav-link { color: rgb(212 212 216); font-size: .875rem; font-weight: 600; white-space: nowrap; transition: color .2s ease, background-color .2s ease; }
+.nav-link:hover, .nav-pill:hover { color: rgb(251 146 60); background: rgb(255 255 255 / 8%); }
+.category-panel { animation: menu-in .22s ease both; }
 .shine { position: relative; overflow: hidden; }
 .shine::after { content: ''; position: absolute; inset: 0; transform: translateX(-120%); background: linear-gradient(105deg, transparent 35%, rgb(255 255 255 / 28%), transparent 65%); transition: transform .6s ease; }
 .shine:hover::after { transform: translateX(120%); }
